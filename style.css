@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #15222E;
+}
+
+.container{
+    color:#FCBE24;
+    padding-top: 2rem;
+}
+
+.forma{
+    padding-top: 3rem;
+}
+
+
+.forma-grupo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: left;
+margin-bottom: 10px;
+}
+
+.issues_title{
+   padding:0.3rem;
+   max-width: 60%;
+}
+
+.forma-grupo textarea{
+    resize: none;
+    max-height: 4rem;
+    max-width: 100%;
+    overflow:hidden;
+    padding:0.3rem;
+}
+
+.priority , .send_issue{
+    width: 6rem;
+    padding:0.3rem;
+}
+
+/*Todo containers styles*/
+
+.train{
+    margin-top: 5rem;
+    color:#6CE890;
+}
+
+.todo{
+    border: solid 0.2px #FCBE24;
+    padding:0.8rem;
+    overflow-wrap: break-word;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+.done-button{
+    width: 6rem;
+    padding:0.3rem;
+    border:none;
+}
+
+.done-button:hover{
+    background-color: #fbcd59;
+}

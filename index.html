@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script defer src="class.js"></script>
+    <title>To do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To do list</h1>
+        <form class="forma" id="issue_input_form">
+    
+    <div class="forma-grupo">
+      <label for="issue_title">Title of the issue</label>
+      <input maxlength="60" id="issue_title" class="issues_title" type="text" placeholder="Title Issue" value="">
+    </div>
+    
+    <div class="forma-grupo">
+      <label for="issueSeverity">Severity</label>
+      <select class="priority" id="issueSeverity">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+    
+    <div class="forma-grupo">
+      
+      <label for="issue">Descripition </label>
+      <textarea maxlength="400" name="issuedesc" id="issue" class="issues issue-desc"
+      placeholder="Write your issue" value="">
+      </textarea>
+    
+    </div>
+    
+    <input id="boton" class="send_issue" type="button" value="Send Issue">
+    
+    </form>
+    
+    <!-- CONTAINERS WHERE ISSUES ARE INSERTED -->
+    
+    <div class="lista_contenedor">
+    
+      <div id="list" class="train">
+      <input id="check" class="done-task" type="button" value="Done task">
+      </div>
+
+    </div>
+    
+    </div>
+
+</body>
+
+<div>
+  <p></p>
+</div>
+
+</html>
