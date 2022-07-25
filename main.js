@@ -78,7 +78,6 @@ done.addEventListener("click",()=>{
         the array created and pushed below and show again all the task 
         that has been done */
     test.forEach( div => {
-        nuevoDiv.removeChild(boton)
         divi.appendChild(div)
     });
     
