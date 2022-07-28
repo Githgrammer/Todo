@@ -40,6 +40,7 @@ boton.innerText="Done"
 boton.classList.add("done-button")
 nuevoDiv.appendChild(boton);
 
+
 /*Changing colors depending of the severity choosed*/
 if(seve.value == "High"){
     severity.style.color="red";
@@ -54,36 +55,33 @@ if(desc_title.value === "" || description.value === ""){
 alert("fill all the inputs")
 }
 else{
- let task=divi.appendChild(nuevoDiv);
+ divi.appendChild(nuevoDiv);
     desc_title.value="";
     description.value="";
     seve.value="Low";
 }
 
+/*Button to check all the done task */
 
+done.addEventListener("click",()=>{
+/*loop through all the elements inside
+    the array created and pushed below and show again all the task 
+    that has been done */
+test.forEach( div => {
+    divi.appendChild(div)
+});
 
+})
 
 /*Finally the button to remove the item clicked by the user*/
 boton.addEventListener("click" ,()=>{
     /*here we push all the new info before removing it */
+    
     test.push(nuevoDiv);
     nuevoDiv.remove();
 })
 
-
-/*Button to check all the done task */
-
-done.addEventListener("click",()=>{
-    /*loop through all the elements inside
-        the array created and pushed below and show again all the task 
-        that has been done */
-    test.forEach( div => {
-        divi.appendChild(div)
-    });
-    
-    })
-    
-
 })
+
 
 
